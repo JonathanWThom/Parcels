@@ -21,7 +21,7 @@ _Works in any web browser. To run Parcel Shipping Calculator, in command line ru
 
 ```
 $ git clone https://github.com/weitzwoman/parcels_ruby.git
-$ cd triangles
+$ cd parcels
 $ bundle
 $ ruby app.rb
 ```
