@@ -10,10 +10,14 @@
 * Input: (5, 10, 10, 100, 1)
 * Output: $500
 
+#### 2. Returns cost to ship a given parcel based on all factors and optional gift-wrapping depth input
+* Input: (5, 10, 10, 100, 1, 2)
+* Output: $600
+
 
 ## Setup/Installation Requirements
 
-* _Works in any web browser. To run Triangle Test, in command line run:_
+_Works in any web browser. To run Parcel Shipping Calculator, in command line run:_
 
 ```
 $ git clone https://github.com/weitzwoman/parcels_ruby.git
