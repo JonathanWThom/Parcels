@@ -1,7 +1,8 @@
 class Parcels
-  define_method(:initialize) do |height, width, weight, distance, speed|
+  define_method(:initialize) do |height, width, depth, weight, distance, speed|
     @height = height
     @width = width
+    @depth = depth
     @weight = weight
     @distance = distance
     @speed = speed
@@ -11,7 +12,18 @@ class Parcels
     @height * @width
   end
 
+  define_method(:surface_area) do
+    @height * @width * @depth
+  end
+
   define_method(:cost_to_ship) do
-    (self.volume() * @weight * (@distance./(100)))/@speed
+    cost = 0
+    base_cost = (self.volume() * @weight * (@distance./(100)))/@speed
+    if @depth > 0
+      cost = base_cost + self.surface_area()
+    else
+      cost = base_cost
+    end
+    cost
   end
 end

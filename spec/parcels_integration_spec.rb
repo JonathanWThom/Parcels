@@ -8,6 +8,7 @@ describe('The cost to ship path', {:type => :feature}) do
     visit('/')
     fill_in('height', :with => "10")
     fill_in('width', :with => "10")
+    fill_in('depth', :with => "0")
     fill_in('weight', :with => "5")
     fill_in('distance', :with => "50")
     choose('5')
